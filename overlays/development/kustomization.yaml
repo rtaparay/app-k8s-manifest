@@ -10,4 +10,4 @@ resources:
 images:
   - name: nginx:v1
     newName: nginx
-    newTag: latest
+    newTag: v1
