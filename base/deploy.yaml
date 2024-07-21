@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
       - name: nginx
-        image: nginx:latest
+        image: nginx:v1
         ports:
         - containerPort: 80
         volumeMounts:
@@ -23,7 +23,7 @@ spec:
       volumes:
       - name: html-volume
         configMap:
-          name: nginx-cm-dev
+          name: nginx-cm
           items:
           - key: index.html
             path: index.html

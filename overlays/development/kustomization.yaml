@@ -6,10 +6,8 @@ bases:
 
 resources:
   - cm.yaml
-  - deploy.yaml
-  - svc.yaml
 
 images:
-  - name: quarkus
-    newName: nginx:latest
-    newTag: 1.0.0
+  - name: nginx:v1
+    newName: nginx
+    newTag: latest
