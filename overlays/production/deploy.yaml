@@ -1,7 +1,7 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: nginx-deploy-dev
+  name: nginx-deploy-prd
 spec:
   selector:
     matchLabels:
@@ -23,7 +23,7 @@ spec:
       volumes:
       - name: html-volume
         configMap:
-          name: nginx-cm-dev
+          name: nginx-cm-prd
           items:
           - key: index.html
             path: index.html

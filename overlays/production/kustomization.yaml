@@ -5,8 +5,9 @@ bases:
   - ../../base
 
 resources:
-  - route.yaml
-
+  - cm.yaml
+  - deploy.yaml
+  - svc.yaml
 images:
   - name: quarkus
     newName: image-registry.openshift-image-registry.svc:5000/kcd-lima/code-with-quarkus-kcd
