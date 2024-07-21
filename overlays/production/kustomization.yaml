@@ -10,5 +10,5 @@ resources:
   - svc.yaml
 images:
   - name: quarkus
-    newName: image-registry.openshift-image-registry.svc:5000/kcd-lima/code-with-quarkus-kcd
+    newName: nginx:latest
     newTag: 0.0.0
